@@ -12,16 +12,26 @@
 Файлы с логами сохраняются в \logs
 
 ## Стуктура проекта
-
+```
 project/
-├── application/
-│   ├── __init__.py
-│   ├── salary.py
-│   └── db/
-│       ├── __init__.py
-│       └── people.py
-├── decorators.py
-├── logs/                   
-│   ├── (файлы логов Задание 2)
-├── main.py
-└── (файлы логов Задание 1)
+├── application/ # Пакет с бизнес-логикой
+│ ├── init.py # Маркер пакета
+│ ├── salary.py # Функция calculate_salary
+│ └── db/ # Подпакет для БД
+│ ├── init.py # Маркер подпакета
+│ └── people.py # Функция get_employees
+│
+├── decorators.py # Решение задания 2 (Декоратор logger)
+│
+├── logs/ # Папка для логов
+│ ├── salary.log # Лог calculate_salary
+│ └── people.log # Лог get_employees
+│
+├── main.py # Решение задания 3 (Главный файл проекта д/3)
+│
+├── decorator_1ex.py # Решение задания 1
+├── log_1.log # Лог hello_world
+├── log_2.log # Лог summator
+├── log_3.log # Лог div
+└── main.log # Лог Задания 1
+...
